@@ -36,6 +36,7 @@ void insertion_sort_list(listint_t **list)
 	listint_t *current = (*list)->next;
 	listint_t *tmp;
 	int correct_list, key;
+
 	for ( ; current != NULL; current = current->next)
 	{
 		tmp = current->prev;
