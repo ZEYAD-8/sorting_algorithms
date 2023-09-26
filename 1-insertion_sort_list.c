@@ -30,11 +30,13 @@ void node_swap(listint_t *nx, listint_t *ny)
  */
 void insertion_sort_list(listint_t **list)
 {
+	listint_t *current, *tmp;
+	int correct_list, key;
+
+
 	if (list == NULL || *list == NULL || (*list)->next == NULL)
 		return;
 
-	listint_t *current, *tmp;
-	int correct_list, key;
 
 	current = (*list)->next;
 	for ( ; current != NULL; current = current->next)
