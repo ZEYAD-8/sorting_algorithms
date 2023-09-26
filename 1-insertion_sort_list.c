@@ -33,10 +33,10 @@ void insertion_sort_list(listint_t **list)
 	if (list == NULL || *list == NULL || (*list)->next == NULL)
 		return;
 
-	listint_t *current = (*list)->next;
-	listint_t *tmp;
+	listint_t *current, *tmp;
 	int correct_list, key;
 
+	current = (*list)->next;
 	for ( ; current != NULL; current = current->next)
 	{
 		tmp = current->prev;
