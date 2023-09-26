@@ -24,10 +24,11 @@ void swap(int *x, int *y)
 void bubble_sort(int *array, unsigned int size)
 {
 	size_t swapped, i, j;
+
 	for (i = 0; i < size - 1; i++)
 	{
 		swapped = 0;
-		for (j = 0; j < size - i - 1; j ++)
+		for (j = 0; j < size - i - 1; j++)
 		{
 			if (array[j] > array[j + 1])
 			{
